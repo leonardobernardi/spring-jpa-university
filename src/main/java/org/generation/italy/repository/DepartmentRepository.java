@@ -1,7 +1,7 @@
-package repository;
+package org.generation.italy.repository;
 
+import org.generation.italy.model.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
-import entity.Department;
 
 public interface DepartmentRepository extends JpaRepository<Department, Integer> {
 

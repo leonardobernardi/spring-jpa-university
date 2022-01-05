@@ -1,4 +1,4 @@
-package entity;
+package org.generation.italy.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,7 +18,7 @@ public class Department {
 	
 	private String name;
 	private String address;
-	private Integer phone;
+	private String phone;
 	private String email;
 	private String website;
 	
@@ -49,11 +49,11 @@ public class Department {
 		this.address = address;
 	}
 
-	public Integer getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(Integer phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
