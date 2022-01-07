@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<div th:replace="resources :: head"></div>
+	<title>Degrees</title>
+</head>
+<body>
+
+    <div class="row">
+        <h1 class="text-center">Degrees</h1>
+        <hr/>
+        <div th:each="degree : ${degrees}" class="card shadow-lg p-3 mb-5 bg-body rounded col-5 mx-auto">
+          <div class="card-body">
+            <h5 class="card-title" th:text="${degree.name}"></h5>
+            <p class="card-text" th:utext="'<b>Level: </b>' + ${degree.level}"></p>
+            <p class="card-text" th:utext="'<b>Address: </b>' + ${degree.address}"></p>
+            <p class="card-text" th:utext="'<b>E-mail: </b>' + ${degree.email}"></p>
+            <p class="card-text" th:utext="'<b>Website: </b>' + ${degree.website}"></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="text-center"><a th:href="@{/}">Back to Departments</a></div>
+	<div th:replace="resources :: scripts"></div>
+	</div>
+</body>
+</html>

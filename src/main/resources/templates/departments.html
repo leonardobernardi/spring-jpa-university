@@ -19,6 +19,7 @@
 				<th scope="col">Email</th>
 				<th scope="col">Website</th>
                 <th scope="col">Head of Department</th>
+				<th scope="col">Details</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -29,6 +30,7 @@
 				<td th:text="${department.email}"></td>
 				<td th:text="${department.website}"></td>
 				<td th:text="${department.headOfDepartment}"></td>
+				<td><a th:href="@{'/departments/' + ${department.id}}">Details</a></td>
 			</tr>
 		</tbody>
 	</table>
